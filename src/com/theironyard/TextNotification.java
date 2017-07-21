@@ -3,7 +3,7 @@ package com.theironyard;
 import java.time.LocalDateTime;
 
 /**
- * Created by balajibalakrishnan on 7/19/17.
+ * Created by Vijee on 7/19/17.
  */
 public class TextNotification extends Notification {
     private String recipient;

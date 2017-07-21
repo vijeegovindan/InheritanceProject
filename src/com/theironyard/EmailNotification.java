@@ -3,7 +3,7 @@ package com.theironyard;
 import java.time.LocalDateTime;
 
 /**
- * Created by balajibalakrishnan on 7/19/17.
+ * Created by Vijee on 7/19/17.
  */
 public class EmailNotification extends Notification {
 
@@ -70,7 +70,7 @@ public class EmailNotification extends Notification {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        EmailNotification returnVal = new EmailNotification(LocalDateTime.now(), "Email_Notification_Subject", "Email_Notification_Body", "Email_Notification_Recipient"," Email_Notification_SMTP_Provider" );
+        EmailNotification returnVal = new EmailNotification(getCreatedAt(), getSubject(), getBody(), getRecipient(),getSmtpProvider() );
         return returnVal;
     }
 }
